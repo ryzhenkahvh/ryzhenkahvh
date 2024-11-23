@@ -11,5 +11,7 @@
     <p>CHEESE</p>
 </div>
 
+<img src="https://github-readme-stats.vercel.app/api?username=ryzhenkahvh&show_icons=true&theme=radical" alt="jxpix's GitHub stats" />
+
 </body>
 </html>

@@ -7,11 +7,10 @@
 <body>
 
 <div class="header">
-    <h1>jxpix</h1>
-    <p>CHEESE</p>
+    <img src="https://github-readme-stats.vercel.app/api?username=ryzhenkahvh&show_icons=true&theme=radical" alt="jxpix" />
 </div>
 
-<img src="https://github-readme-stats.vercel.app/api?username=ryzhenkahvh&show_icons=true&theme=radical" alt="jxpix's GitHub stats" />
+
 
 </body>
 </html>

@@ -9,7 +9,7 @@
 <div class="header">
     <h1>🧀</h1>
 </div>
-<img src="https://github-readme-stats.vercel.app/api?username=ryzhenkahvh&show_icons=true&theme=radical" alt="jxpix" />
+<img src="https://github-readme-stats.vercel.app/api?username=ryzhenkahvh&show_icons=true&theme=radical" alt="jxpix's" />
 <img src="https://i.gifer.com/3RvH.gif" alt="GitHub repositories counter" />
 
 </body>

@@ -1,7 +1,7 @@
 
 <img src="assets/identity.gif" alt="JXPIX / ryzhenkahvh" width="100%" />
 
-`C++` · `Kotlin` · `Python` · `Java`
+![C++](https://img.shields.io/badge/C%2B%2B-1a1b27?style=for-the-badge&logo=cplusplus&logoColor=bb9af7) ![Kotlin](https://img.shields.io/badge/Kotlin-1a1b27?style=for-the-badge&logo=kotlin&logoColor=bb9af7) ![Python](https://img.shields.io/badge/Python-1a1b27?style=for-the-badge&logo=python&logoColor=bb9af7) ![Java](https://img.shields.io/badge/Java-1a1b27?style=for-the-badge&logo=openjdk&logoColor=bb9af7)
 
 [![GitHub](https://img.shields.io/badge/GITHUB-1a1b27?style=for-the-badge&logo=github&logoColor=bb9af7)](https://github.com/ryzhenkahvh) [![VK](https://img.shields.io/badge/VK-1a1b27?style=for-the-badge&logo=vk&logoColor=bb9af7)](https://vk.com/ryzhenkahvh) [![Instagram](https://img.shields.io/badge/INSTAGRAM-1a1b27?style=for-the-badge&logo=instagram&logoColor=bb9af7)](https://www.instagram.com/ryzhenkayt/)
 

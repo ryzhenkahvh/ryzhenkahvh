@@ -1,1 +1,48 @@
-в
+name: Signal Grid
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: signal-grid
+  cancel-in-progress: false
+
+jobs:
+  move:
+    if: startsWith(github.event.issue.title, 'SIGNAL ')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Process move
+        run: python3 scripts/signal_grid.py move
+
+      - name: Commit board
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add README.md signal-grid.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'game: update signal grid'
+            git push
+          fi
+
+      - name: Report result and close issue
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+        run: |
+          if [ -f signal-result.txt ]; then
+            gh issue comment "$ISSUE" --body-file signal-result.txt
+          else
+            gh issue comment "$ISSUE" --body 'Move could not be processed. Refresh the profile and try again.'
+          fi
+          gh issue close "$ISSUE"

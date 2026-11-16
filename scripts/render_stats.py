@@ -11,7 +11,10 @@ def fetch(url):
     req=urllib.request.Request(url,headers={'User-Agent':'profile-stats-renderer','Accept':'*/*'})
     with urllib.request.urlopen(req,timeout=45) as r: return r.read()
 profile=json.loads(fetch(f'https://api.github.com/users/{USER}'))
-avatar=Image.open(io.BytesIO(fetch(profile['avatar_url']+'?s=800'))).convert('RGB')
+avatar=Image.open(io.BytesIO(fetch(profile['avatar_url']+'?s=800'))).convert('RGBA')
+# Preserve transparency until it is composited onto white.
+white=Image.new('RGBA',avatar.size,(255,255,255,255))
+avatar=Image.alpha_composite(white,avatar).convert('RGB')
 avatar=avatar.resize((800,800),Image.Resampling.LANCZOS)
 # Build one continuous image and split it into four 680x400 crops.
 canvas=Image.new('RGB',(1360,800),'white'); canvas.paste(avatar,(280,0))

@@ -16,6 +16,6 @@
 
 <img src="assets/light-statistics.gif" alt="Statistics" width="100%" />
 
-<img src="assets/avatar-stats.png?v=20261116-3" alt="GitHub statistics" width="49%" /> <img src="assets/avatar-time.png?v=20261116-3" alt="Commits by hour, UTC plus 3" width="49%" />
+<img src="assets/avatar-stats.png?v=20261116-4" alt="GitHub statistics" width="49%" /> <img src="assets/avatar-time.png?v=20261116-4" alt="Commits by hour, UTC plus 3" width="49%" />
 
-<img src="assets/avatar-languages.png?v=20261116-3" alt="Languages by repository" width="49%" /> <img src="assets/avatar-commits.png?v=20261116-3" alt="Languages by commits" width="49%" />
+<img src="assets/avatar-languages.png?v=20261116-4" alt="Languages by repository" width="49%" /> <img src="assets/avatar-commits.png?v=20261116-4" alt="Languages by commits" width="49%" />

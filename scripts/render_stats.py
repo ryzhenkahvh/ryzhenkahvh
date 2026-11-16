@@ -17,7 +17,7 @@ white=Image.new('RGBA',avatar.size,(255,255,255,255))
 avatar=Image.alpha_composite(white,avatar).convert('RGB')
 avatar=avatar.resize((800,800),Image.Resampling.LANCZOS)
 # Build one continuous image and split it into four 680x400 crops.
-canvas=Image.new('RGB',(1360,800),'white'); canvas.paste(avatar,(280,0))
+canvas=Image.new('RGB',(1360,800),'white'); canvas.paste(avatar,(0,0))
 for name,card,x,y in [('stats','stats',0,0),('time','productive-time',680,0),('languages','repos-per-language',0,400),('commits','most-commit-language',680,400)]:
     svg=fetch(f'https://github-profile-summary-cards.vercel.app/api/cards/{card}?username={USER}&theme=default&utcOffset=3').decode()
     if '<svg' not in svg or 'gpsc-root' not in svg: raise RuntimeError('Unexpected card response for '+card)
@@ -26,6 +26,12 @@ for name,card,x,y in [('stats','stats',0,0),('time','productive-time',680,0),('l
     card_img=Image.open(io.BytesIO(cairosvg.svg2png(bytestring=svg.encode(),output_width=680,output_height=400))).convert('RGBA')
     bg=canvas.crop((x,y,x+680,y+400)).convert('RGBA')
     bg=Image.alpha_composite(bg,Image.new('RGBA',bg.size,(255,255,255,223)))
+    # A subtle signature on the right-hand cards, behind the statistics.
+    if name in ('time', 'commits'):
+        from PIL import ImageFont
+        label='jx' if name == 'time' else 'pix'
+        font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf',48)
+        ImageDraw.Draw(bg).text((560,70),label,font=font,fill=(105,175,180,255))
     bg=Image.alpha_composite(bg,card_img).convert('RGB')
     bg.save(ROOT/('avatar-'+name+'.png'),optimize=True)
     print('Rendered',name)

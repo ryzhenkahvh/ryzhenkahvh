@@ -1,14 +1,14 @@
 {
   "round": 1,
-  "version": 0,
-  "moves": 0,
+  "version": 1,
+  "moves": 1,
   "board": [
+    1,
+    0,
     0,
     1,
     0,
     1,
-    0,
-    0,
     0,
     1,
     1,
@@ -29,5 +29,5 @@
     1,
     1
   ],
-  "last": "\u2014"
+  "last": "@ryzhenkahvh \u00b7 A1"
 }

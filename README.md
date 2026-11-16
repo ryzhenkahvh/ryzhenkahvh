@@ -1,6 +1,6 @@
-## jxpix
+<a href="https://github.com/hackwithdev/pixelartgifs#11"><img align="right" src="https://github.com/user-attachments/assets/f2e5917a-b68e-402e-a9f5-61d1f28dd539" width="250" alt="Анимированный пиксель-арт: девушка за компьютером" /></a>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&duration=3500&pause=1500&color=9B85C9&width=300&height=25&lines=C%2B%2B+%2F+Kotlin+%2F+Python;Development+%26+experiments" alt="C++, Kotlin, Python" />
+## jxpix
 
 `C++` · `Kotlin` · `Python` · `Java`
 
@@ -8,8 +8,18 @@
 
 ![Profile views](https://komarev.com/ghpvc/?username=ryzhenkahvh&label=profile+views&color=9b85c9&style=flat-square)
 
-### GitHub statistics
+<br clear="all" />
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=ryzhenkahvh&theme=tokyonight" alt="GitHub statistics" width="350" /> <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ryzhenkahvh&theme=tokyonight" alt="Languages by repository" width="350" />
+### Activity
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=ryzhenkahvh&bg_color=1a1b27&color=bb9af7&line=9d7cd8&point=7dcfff&area=true&hide_border=true&hide_title=true" alt="GitHub contribution activity" width="100%" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ryzhenkahvh&theme=tokyonight" alt="Contribution activity over the past year" width="100%" />
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=ryzhenkahvh&bg_color=1a1b27&color=bb9af7&line=9d7cd8&point=7dcfff&area=true&hide_border=true&hide_title=true" alt="GitHub daily contribution activity" width="100%" />
+
+### Statistics
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=ryzhenkahvh&theme=tokyonight" alt="GitHub statistics" width="49%" /> <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=ryzhenkahvh&theme=tokyonight&utcOffset=3" alt="Commits by hour, UTC plus 3" width="49%" />
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ryzhenkahvh&theme=tokyonight" alt="Languages by repository" width="49%" /> <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ryzhenkahvh&theme=tokyonight" alt="Languages by commits" width="49%" />
+
+<sub>Pixel animation: [WitchCoder, pixelartgifs collection](https://github.com/hackwithdev/pixelartgifs#11) · Activity: public GitHub data</sub>

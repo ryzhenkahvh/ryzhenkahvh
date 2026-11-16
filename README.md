@@ -6,10 +6,10 @@
 </head>
 <body>
 
-# 🧀
-
-![GitHub stats](./stats.svg)
-
+<div class="header">
+    <h1>🧀</h1>
+</div>
+<img src="./stats.svg" alt="jxpix's GitHub Stats" />
 <img src="https://i.gifer.com/3RvH.gif" alt="GitHub repositories counter" />
 
 </body>

@@ -26,12 +26,18 @@ for name,card,x,y in [('stats','stats',0,0),('time','productive-time',680,0),('l
     card_img=Image.open(io.BytesIO(cairosvg.svg2png(bytestring=svg.encode(),output_width=680,output_height=400))).convert('RGBA')
     bg=canvas.crop((x,y,x+680,y+400)).convert('RGBA')
     bg=Image.alpha_composite(bg,Image.new('RGBA',bg.size,(255,255,255,223)))
-    # A subtle signature on the right-hand cards, behind the statistics.
+    # Oversized, translucent lettering sits behind the graphs like a watermark.
     if name in ('time', 'commits'):
         from PIL import ImageFont
         label='jx' if name == 'time' else 'pix'
-        font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf',48)
-        ImageDraw.Draw(bg).text((560,70),label,font=font,fill=(105,175,180,255))
+        font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf',160)
+        overlay=Image.new('RGBA',bg.size,(0,0,0,0))
+        draw=ImageDraw.Draw(overlay)
+        bounds=draw.textbbox((0,0),label,font=font,stroke_width=1)
+        width=bounds[2]-bounds[0]
+        x=650-width
+        draw.text((x,92),label,font=font,fill=(18,186,194,27),stroke_width=2,stroke_fill=(9,157,166,44))
+        bg=Image.alpha_composite(bg,overlay)
     bg=Image.alpha_composite(bg,card_img).convert('RGB')
     bg.save(ROOT/('avatar-'+name+'.png'),optimize=True)
     print('Rendered',name)

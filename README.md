@@ -23,12 +23,6 @@
 <!-- SIGNAL-GRID:START -->
 ### SIGNAL GRID
 
-**Round 1** · Moves: 1 · Last: @ryzhenkahvh · A1
-
-Turn off all lights. A move flips one cell and its four neighbours.
-
-Click a cell → submit the prefilled issue → wait for the board to update.
-
 | | A | B | C | D | E |
 |:--:|:--:|:--:|:--:|:--:|:--:|
 | 1 | [🟪](https://github.com/ryzhenkahvh/ryzhenkahvh/issues/new?title=SIGNAL+1+0+0&body=Submit+this+issue+to+play+your+move.) | [⬛](https://github.com/ryzhenkahvh/ryzhenkahvh/issues/new?title=SIGNAL+1+0+1&body=Submit+this+issue+to+play+your+move.) | [⬛](https://github.com/ryzhenkahvh/ryzhenkahvh/issues/new?title=SIGNAL+1+0+2&body=Submit+this+issue+to+play+your+move.) | [🟪](https://github.com/ryzhenkahvh/ryzhenkahvh/issues/new?title=SIGNAL+1+0+3&body=Submit+this+issue+to+play+your+move.) | [⬛](https://github.com/ryzhenkahvh/ryzhenkahvh/issues/new?title=SIGNAL+1+0+4&body=Submit+this+issue+to+play+your+move.) |
@@ -37,5 +31,4 @@ Click a cell → submit the prefilled issue → wait for the board to update.
 | 4 | [🟪](https://github.com/ryzhenkahvh/ryzhenkahvh/issues/new?title=SIGNAL+1+3+0&body=Submit+this+issue+to+play+your+move.) | [🟪](https://github.com/ryzhenkahvh/ryzhenkahvh/issues/new?title=SIGNAL+1+3+1&body=Submit+this+issue+to+play+your+move.) | [🟪](https://github.com/ryzhenkahvh/ryzhenkahvh/issues/new?title=SIGNAL+1+3+2&body=Submit+this+issue+to+play+your+move.) | [⬛](https://github.com/ryzhenkahvh/ryzhenkahvh/issues/new?title=SIGNAL+1+3+3&body=Submit+this+issue+to+play+your+move.) | [🟪](https://github.com/ryzhenkahvh/ryzhenkahvh/issues/new?title=SIGNAL+1+3+4&body=Submit+this+issue+to+play+your+move.) |
 | 5 | [🟪](https://github.com/ryzhenkahvh/ryzhenkahvh/issues/new?title=SIGNAL+1+4+0&body=Submit+this+issue+to+play+your+move.) | [⬛](https://github.com/ryzhenkahvh/ryzhenkahvh/issues/new?title=SIGNAL+1+4+1&body=Submit+this+issue+to+play+your+move.) | [⬛](https://github.com/ryzhenkahvh/ryzhenkahvh/issues/new?title=SIGNAL+1+4+2&body=Submit+this+issue+to+play+your+move.) | [🟪](https://github.com/ryzhenkahvh/ryzhenkahvh/issues/new?title=SIGNAL+1+4+3&body=Submit+this+issue+to+play+your+move.) | [🟪](https://github.com/ryzhenkahvh/ryzhenkahvh/issues/new?title=SIGNAL+1+4+4&body=Submit+this+issue+to+play+your+move.) |
 
-<sub>One shared game · GitHub account required · stale moves are rejected</sub>
 <!-- SIGNAL-GRID:END -->

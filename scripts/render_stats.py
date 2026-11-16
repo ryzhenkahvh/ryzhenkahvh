@@ -27,10 +27,10 @@ for name,card,x,y in [('stats','stats',0,0),('time','productive-time',680,0),('l
     bg=canvas.crop((x,y,x+680,y+400)).convert('RGBA')
     bg=Image.alpha_composite(bg,Image.new('RGBA',bg.size,(255,255,255,223)))
     # Oversized, translucent lettering sits behind the graphs like a watermark.
-    if name in ('time', 'commits'):
+    if name == 'time':
         from PIL import ImageFont
-        label='jx' if name == 'time' else 'pix'
-        font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf',160)
+        label='jxpix'
+        font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf',105)
         overlay=Image.new('RGBA',bg.size,(0,0,0,0))
         draw=ImageDraw.Draw(overlay)
         bounds=draw.textbbox((0,0),label,font=font,stroke_width=1)

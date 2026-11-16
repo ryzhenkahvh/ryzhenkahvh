@@ -27,7 +27,7 @@ def valid(s):
     return (type(s.get('round')) is int and s['round']>0 and type(s.get('version')) is int and s['version']>=0 and type(s.get('moves')) is int and s['moves']>=0 and isinstance(s.get('board'),list) and len(s['board'])==25 and all(type(x) is int and x in (0,1) for x in s['board']))
 
 def render(s):
-    out=['### SIGNAL GRID','',f"**Round {s['round']}** · Moves: {s['moves']} · Last: {s['last']}",'', 'Turn off all lights. A move flips one cell and its four neighbours.', '', 'Click a cell → submit the prefilled issue → wait for the board to update.', '', '| | A | B | C | D | E |','|:--:|:--:|:--:|:--:|:--:|:--:|']
+    out=['### SIGNAL GRID','','| | A | B | C | D | E |','|:--:|:--:|:--:|:--:|:--:|:--:|']
     for r in range(N):
         cells=[]
         for c in range(N):
@@ -35,7 +35,7 @@ def render(s):
             url=f'https://github.com/{REPO}/issues/new?'+urlencode({'title':title,'body':'Submit this issue to play your move.'})
             cells.append(f'[{"🟪" if s["board"][r*N+c] else "⬛"}]({url})')
         out.append('| '+str(r+1)+' | '+' | '.join(cells)+' |')
-    out += ['','<sub>One shared game · GitHub account required · stale moves are rejected</sub>','']
+    out += ['']
     return '\n'.join(out)
 
 def main():
